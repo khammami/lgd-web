@@ -45,8 +45,8 @@ const config: DocsThemeConfig = {
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Google Local Guide</h3>
             <li>
-              <NextLink href="/" className={classes.link}>
-                link
+              <NextLink href="https://maps.google.com/localguides/home" className={classes.link}>
+                Local Guides Home
               </NextLink>
             </li>
           </ul>
@@ -54,22 +54,13 @@ const config: DocsThemeConfig = {
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Community</h3>
             <li>
-              <NextLink href="/" className={classes.link}>
-                link
-              </NextLink>
-            </li>
-          </ul>
-
-          <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
-            <h3 className="text-lg font-bold">Legal</h3>
-            <li>
-              <NextLink href="/" className={classes.link}>
-                Terms of Service
+              <NextLink href="https://www.localguidesconnect.com/" className={classes.link}>
+                Local Guides Connect
               </NextLink>
             </li>
             <li>
-              <NextLink href="/" className={classes.link}>
-                Privacy Policy
+              <NextLink href="https://www.localguidesconnect.com/t5/General-Discussion/bd-p/localguide/label-name/Meet-ups" className={classes.link}>
+                Local Guides Meet-ups
               </NextLink>
             </li>
           </ul>
@@ -83,7 +74,23 @@ const config: DocsThemeConfig = {
             </li>
           </ul>
         </div>
-        <span>© {new Date().getFullYear()} LGD.</span>
+        <div className="flex justify-between flex-wrap gap-10 text-sm">
+          <p className="text-sm">Copyright © {new Date().getFullYear()} Khalil Hammami. All rights reserved.</p>
+          <div className="flex flex-col gap-4 lg:items-end">
+            <ul className="flex gap-5">
+              <li>
+                <NextLink href="/privacy" className={`nx-text-primary-600 nx-underline`}>
+                Privacy Policy
+              </NextLink>
+              </li>
+              <li>
+                <NextLink href="/terms" className={`nx-text-primary-600 nx-underline`}>
+                Terms of Use
+              </NextLink>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     ),
   },
