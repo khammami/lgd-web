@@ -1,7 +1,7 @@
-//import 'nextra-theme-docs/style.css'
+import '../styles/globals.css'
 
-function LgdApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default LgdApp
+export default App

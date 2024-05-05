@@ -1,0 +1,1 @@
+export { default as GooglePlayIcon } from './google-play-store.svg'

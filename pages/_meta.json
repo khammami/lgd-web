@@ -8,16 +8,26 @@
       "timestamp": false
     }
   },
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "terms": {
+    "type": "page",
+    "title": "Terms of Use ('Terms')",
+    "display": "hidden",
+    "theme": {
+      "timestamp": false
+    }
+  },
+  "privacy": {
+    "type": "page",
+    "title": "Privacy Policy",
+    "display": "hidden",
+    "theme": {
+      "timestamp": false
+    }
   },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "#",
     "newWindow": true
   }
 }
