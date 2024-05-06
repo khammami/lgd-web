@@ -75,7 +75,7 @@ const config: DocsThemeConfig = {
           </ul>
         </div>
         <div className="flex justify-between flex-wrap gap-10 text-sm">
-          <p className="text-sm">Copyright © {new Date().getFullYear()} Khalil Hammami. All rights reserved.</p>
+          <p className="text-sm">Copyright © {new Date().getFullYear()} <NextLink href="https://github.com/khammami" target="_blank" className={`nx-text-primary-600 nx-underline`}>Khalil Hammami</NextLink>. All rights reserved.</p>
           <div className="flex flex-col gap-4 lg:items-end">
             <ul className="flex gap-5">
               <li>
