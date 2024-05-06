@@ -94,6 +94,15 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
+  banner: {
+    key: 'lgd-disclaimer',
+    dismissible: false,
+    text: (
+      <span className="text-sm">
+        ⚠️ DISCLAIMER ⚠️ LGD <b>IS NOT</b> sponsored by Google or Local Guides team.
+      </span>
+    )
+  },
   toc: {
     backToTop: true,
   },
