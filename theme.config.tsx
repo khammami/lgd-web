@@ -45,7 +45,7 @@ const config: DocsThemeConfig = {
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Google Local Guide</h3>
             <li>
-              <NextLink href="https://maps.google.com/localguides/home" className={classes.link}>
+              <NextLink href="https://maps.google.com/localguides/home" target="_blank" className={classes.link}>
                 Local Guides Home
               </NextLink>
             </li>
@@ -54,12 +54,12 @@ const config: DocsThemeConfig = {
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Community</h3>
             <li>
-              <NextLink href="https://www.localguidesconnect.com/" className={classes.link}>
+              <NextLink href="https://www.localguidesconnect.com/" target="_blank" className={classes.link}>
                 Local Guides Connect
               </NextLink>
             </li>
             <li>
-              <NextLink href="https://www.localguidesconnect.com/t5/General-Discussion/bd-p/localguide/label-name/Meet-ups" className={classes.link}>
+              <NextLink href="https://www.localguidesconnect.com/t5/General-Discussion/bd-p/localguide/label-name/Meet-ups" target="_blank" className={classes.link}>
                 Local Guides Meet-ups
               </NextLink>
             </li>
@@ -68,7 +68,7 @@ const config: DocsThemeConfig = {
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Download</h3>
             <li>
-              <NextLink href="/" className={classes.link}>
+              <NextLink href="https:/:play.google.com" target="_blank" className={classes.link}>
                 Google Play
               </NextLink>
             </li>
