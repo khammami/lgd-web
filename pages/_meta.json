@@ -1,7 +1,6 @@
 {
   "index": {
     "type": "page",
-    "title": "Home",
     "display": "hidden",
     "theme": {
       "layout": "raw",

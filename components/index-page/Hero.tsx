@@ -21,8 +21,11 @@ export function Hero() {
             </div>
 
             <div>
-              <h3>Local Guides Directory</h3>
-              code a
+              <h3>Calling all Local Guides!</h3>
+              <p>
+              Want to connect with fellow Local Guides in your city or worldwide? 
+              Local Guides Directory (LGD) makes it easy!
+              </p>
             </div>
           </section>
 
