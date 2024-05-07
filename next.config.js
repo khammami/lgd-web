@@ -27,7 +27,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
-  assetPrefix,
+  assetPrefix: assetPrefix,
   basePath: assetPrefix,
   output: "export",
   webpack(config) {

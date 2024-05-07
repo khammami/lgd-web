@@ -20,8 +20,8 @@ export function Hero() {
             <div className="max-md:grow max-xl:w-full flex flex-col items-center gap-2">
               <Image
                 src={"/images/sp-location.png"}
-                width={250}
-                height={250}
+                width={150}
+                height={150}
                 alt=""
               />
               <h1 className="text-primary text-3xl">Locak Guides Directory</h1>
