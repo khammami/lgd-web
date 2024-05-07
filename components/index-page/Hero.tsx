@@ -1,7 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { clsx } from "clsx";
-import { GooglePlayIcon } from "@components/icons";
+import { GooglePlayIcon, LgdHeroIcon } from "@components/icons";
 
 export function Hero() {
   return (
@@ -17,18 +16,12 @@ export function Hero() {
               "[&_code]:whitespace-pre-wrap" /* fix scroll on mobile for code-blocks */
             )}
           >
-            <div className="max-md:grow max-xl:w-full flex flex-col items-center gap-2">
-              <Image
-                src={"/images/sp-location.png"}
-                width={150}
-                height={150}
-                alt=""
-              />
-              <h1 className="text-primary text-3xl">Locak Guides Directory</h1>
+            <div className="max-md:grow max-xl:w-full flex flex-col items-center gap-8 py-8">
+              <LgdHeroIcon />
             </div>
 
             <div>
-              <h3>Describe your data</h3>
+              <h3>Local Guides Directory</h3>
               code a
             </div>
           </section>
