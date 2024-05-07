@@ -1,7 +1,7 @@
 <svg
    viewBox="0 0 479.08481 199.77699"
-   width="479.08481"
-   height="199.77699"
+   width="24"
+   height="auto"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg"
@@ -167,8 +167,6 @@
          id="polygon13" />
     </clipPath>
   </defs>
-  <title
-     id="title13">sp_location_</title>
   <g
      class="b"
      id="g54"
@@ -470,13 +468,4 @@
        r="7.5100002"
        id="circle53" />
   </g>
-  <metadata
-     id="metadata54">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>sp_location_</dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
 </svg>

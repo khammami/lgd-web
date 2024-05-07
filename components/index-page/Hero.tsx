@@ -17,7 +17,7 @@ export function Hero() {
             )}
           >
             <div className="max-md:grow max-xl:w-full flex flex-col items-center gap-8 py-8">
-              <LgdHeroIcon />
+              <LgdHeroIcon className="w-52" />
             </div>
 
             <div>
