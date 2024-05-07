@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.nextra-search{
+/* .nextra-search{
     display: none !important;
-}
+} */
 
 .index {
     p {

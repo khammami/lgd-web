@@ -109,6 +109,7 @@ const config: DocsThemeConfig = {
   navigation: false,
   primaryHue: { light: 22, dark: 22 },
   primarySaturation: { light: 80, dark: 50 },
+  search: { component: null },
 };
 
 // 	#ef7a37 	hsl(22, 85%, 58%)
