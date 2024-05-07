@@ -4,7 +4,8 @@ export function IndexPage() {
   return (
     <div className="index">
       <Hero />
-      <section className="text-center flex flex-col container items-center conf-block max-w-3xl">
+      <section className="text-center gap-14 justify-around container flex flex-col conf-block lg:flex-row-reverse lg:items-start lg:*:w-1/2">
+      <div className="max-lg:text-center">
         <h2>Lorem ipsum dolor sit amet</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
@@ -16,6 +17,7 @@ export function IndexPage() {
           tincidunt. Proin dapibus felis et vehicula semper. Donec facilisis
           nibh in nibh aliquam faucibus. Phasellus nec dapibus ex.
         </p>
+        </div>
       </section>
     </div>
   );

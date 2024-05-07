@@ -49,5 +49,16 @@
   .index-gradient {
     @apply bg-gradient-to-b from-transparent to-primary/5 dark:to-primary/10;
   }
+
+  .hero-bg{
+    background: url('/images/sp-location.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .hero-container{
+    backdrop-filter: blur(200px);
+  }
   
  
