@@ -51,7 +51,7 @@
   }
 
   .hero-bg{
-    background: url('images/sp-location.png');
+    background: url('/images/sp-location.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;

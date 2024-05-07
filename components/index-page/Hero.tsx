@@ -19,7 +19,7 @@ export function Hero() {
           >
             <div className="max-md:grow max-xl:w-full flex flex-col items-center gap-2">
               <Image
-                src={"images/sp-location.png"}
+                src={"/images/sp-location.png"}
                 width={150}
                 height={150}
                 alt=""
