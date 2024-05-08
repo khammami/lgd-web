@@ -5,8 +5,8 @@ import { GooglePlayIcon, LgdHeroIcon } from "@components/icons";
 export function Hero() {
   return (
     <div className="hero-bg xl">
-      <div className="hero-container xl:py-20">
-        <div className="container conf-block">
+      <div className="hero-container index-gradient xl:py-20">
+        <div className="container text-white conf-block">
           <section
             className={clsx(
               "flex-wrap gap-14 justify-center items-center flex max-sm:flex-col",

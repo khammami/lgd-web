@@ -2,13 +2,19 @@ import React from "react";
 import { useRouter } from "next/router";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import NextLink from "next/link";
+import { GooglePlayIcon } from "@components/icons";
 
 const classes = {
   link: "hover:underline decoration-from-font [text-underline-position:from-font]",
 };
 
 const config: DocsThemeConfig = {
-  logo: <span>LGD</span>,
+  logo: (
+    <>
+    <GooglePlayIcon /> 
+    <span className="ml-4">Local Guides Directory</span>
+    </>
+  ),
   project: {
     link: "https://github.com/khammami/lgd-web",
   },
@@ -38,8 +44,8 @@ const config: DocsThemeConfig = {
     text: (
       <div className="w-full">
         <div className="flex justify-between items-start mb-24 flex-wrap gap-10">
-          <a href="/" className="max-lg:w-full">
-            icon
+          <a href="/" className="max-lg:w-full m-4">
+            <GooglePlayIcon className="w-24 h-auto"/>
           </a>
 
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
