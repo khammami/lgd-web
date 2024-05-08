@@ -2,7 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import NextLink from "next/link";
-import { GooglePlayIcon } from "@components/icons";
+import { LgdBookIcon } from "@components/icons";
 
 const classes = {
   link: "hover:underline decoration-from-font [text-underline-position:from-font]",
@@ -11,8 +11,8 @@ const classes = {
 const config: DocsThemeConfig = {
   logo: (
     <>
-    <GooglePlayIcon /> 
-    <span className="ml-4">Local Guides Directory</span>
+      <LgdBookIcon />
+      <span className="ml-4">Local Guides Directory</span>
     </>
   ),
   project: {
@@ -44,14 +44,20 @@ const config: DocsThemeConfig = {
     text: (
       <div className="w-full">
         <div className="flex justify-between items-start mb-24 flex-wrap gap-10">
-          <a href="/" className="max-lg:w-full m-4">
-            <GooglePlayIcon className="w-24 h-auto"/>
-          </a>
-
+          <div className="max-lg:w-full">
+            <NextLink href="/" className="inline-block text-center grayscale hover:grayscale-0">
+              <LgdBookIcon className="w-16 h-auto mx-auto my-8" />
+              <span>Local Guides Directory</span>
+            </NextLink>
+          </div>
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Google Local Guide</h3>
             <li>
-              <NextLink href="https://maps.google.com/localguides/home" target="_blank" className={classes.link}>
+              <NextLink
+                href="https://maps.google.com/localguides/home"
+                target="_blank"
+                className={classes.link}
+              >
                 Local Guides Home
               </NextLink>
             </li>
@@ -60,12 +66,20 @@ const config: DocsThemeConfig = {
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Community</h3>
             <li>
-              <NextLink href="https://www.localguidesconnect.com/" target="_blank" className={classes.link}>
+              <NextLink
+                href="https://www.localguidesconnect.com/"
+                target="_blank"
+                className={classes.link}
+              >
                 Local Guides Connect
               </NextLink>
             </li>
             <li>
-              <NextLink href="https://www.localguidesconnect.com/t5/General-Discussion/bd-p/localguide/label-name/Meet-ups" target="_blank" className={classes.link}>
+              <NextLink
+                href="https://www.localguidesconnect.com/t5/General-Discussion/bd-p/localguide/label-name/Meet-ups"
+                target="_blank"
+                className={classes.link}
+              >
                 Local Guides Meet-ups
               </NextLink>
             </li>
@@ -74,25 +88,45 @@ const config: DocsThemeConfig = {
           <ul className="text-sm flex flex-col gap-4 max-lg:w-[46%]">
             <h3 className="text-lg font-bold">Download</h3>
             <li>
-              <NextLink href="https:/:play.google.com" target="_blank" className={classes.link}>
+              <NextLink
+                href="https:/:play.google.com"
+                target="_blank"
+                className={classes.link}
+              >
                 Google Play
               </NextLink>
             </li>
           </ul>
         </div>
         <div className="flex justify-between flex-wrap gap-10 text-sm">
-          <p className="text-sm">Copyright © {new Date().getFullYear()} <NextLink href="https://github.com/khammami" target="_blank" className={`nx-text-primary-600 nx-underline`}>Khalil Hammami</NextLink>. All rights reserved.</p>
+          <p className="text-sm">
+            Copyright © {new Date().getFullYear()}{" "}
+            <NextLink
+              href="https://github.com/khammami"
+              target="_blank"
+              className={`nx-text-primary-600 nx-underline`}
+            >
+              Khalil Hammami
+            </NextLink>
+            . All rights reserved.
+          </p>
           <div className="flex flex-col gap-4 lg:items-end">
             <ul className="flex gap-5">
               <li>
-                <NextLink href="/privacy" className={`nx-text-primary-600 nx-underline`}>
-                Privacy Policy
-              </NextLink>
+                <NextLink
+                  href="/privacy"
+                  className={`nx-text-primary-600 nx-underline`}
+                >
+                  Privacy Policy
+                </NextLink>
               </li>
               <li>
-                <NextLink href="/terms" className={`nx-text-primary-600 nx-underline`}>
-                Terms of Use
-              </NextLink>
+                <NextLink
+                  href="/terms"
+                  className={`nx-text-primary-600 nx-underline`}
+                >
+                  Terms of Use
+                </NextLink>
               </li>
             </ul>
           </div>
@@ -101,13 +135,14 @@ const config: DocsThemeConfig = {
     ),
   },
   banner: {
-    key: 'lgd-disclaimer',
+    key: "lgd-disclaimer",
     dismissible: false,
     text: (
       <span className="text-sm">
-        ⚠️ DISCLAIMER ⚠️ LGD <b>IS NOT</b> sponsored by Google or Local Guides team.
+        ⚠️ DISCLAIMER ⚠️ LGD <b>IS NOT</b> sponsored by Google or Local Guides
+        team.
       </span>
-    )
+    ),
   },
   toc: {
     backToTop: true,
