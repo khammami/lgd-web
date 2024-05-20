@@ -11,7 +11,7 @@ const classes = {
 const config: DocsThemeConfig = {
   logo: (
     <>
-      <LgdBookIcon />
+      <LgdBookIcon className="w-6 h-auto"/>
       <span className="ml-4">Local Guides Directory</span>
     </>
   ),

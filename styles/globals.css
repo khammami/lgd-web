@@ -7,59 +7,57 @@
 } */
 
 .index {
-    p {
-      @apply text-lg lg:text-xl/9 mb-5 max-w-2xl;
-    }
-  
-    h2 {
-      @apply text-3xl lg:text-5xl font-bold mb-10 text-balance;
-    }
-  
-    pre {
-      @apply bg-white;
-    }
+  p {
+    @apply text-lg lg:text-xl/9 mb-5 max-w-2xl;
   }
 
-  .conf-heading {
-    @apply text-3xl lg:text-[50px]/[4rem] font-bold text-balance;
-  }
-  
-  .conf-block {
-    @apply py-14 lg:py-24;
+  h2 {
+    @apply text-3xl lg:text-5xl font-bold mb-10 text-balance;
   }
 
-  .index-bg {
-    background: linear-gradient(
+  pre {
+    @apply bg-white;
+  }
+}
+
+.conf-heading {
+  @apply text-3xl lg:text-[50px]/[4rem] font-bold text-balance;
+}
+
+.conf-block {
+  @apply py-14 lg:py-24;
+}
+
+.index-bg {
+  background: linear-gradient(
+      303.75deg,
+      rgba(124, 124, 124, 0.2) 0.8%,
+      rgba(124, 124, 124, 0) 74.17%
+    ),
+    linear-gradient(0deg, #f8f8f8, #f8f8f8);
+
+  .dark & {
+    background: linear-gradient(0deg, #111, #111),
+      linear-gradient(
         303.75deg,
         rgba(124, 124, 124, 0.2) 0.8%,
         rgba(124, 124, 124, 0) 74.17%
-      ),
-      linear-gradient(0deg, #f8f8f8, #f8f8f8);
-  
-    .dark & {
-      background: linear-gradient(0deg, #111, #111),
-        linear-gradient(
-          303.75deg,
-          rgba(124, 124, 124, 0.2) 0.8%,
-          rgba(124, 124, 124, 0) 74.17%
-        );
-    }
+      );
   }
-  
-  .index-gradient {
-    @apply bg-gradient-to-b from-transparent to-primary/5 dark:to-primary/10;
-  }
+}
 
-  .hero-bg{
-    background: url('https://raw.githubusercontent.com/khammami/lgd-web/main/public/images/sp-location.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #261a17;
-  }
+.index-gradient {
+  @apply bg-gradient-to-b from-transparent to-primary/5 dark:to-primary/10;
+}
 
-  .hero-container{
-    backdrop-filter: blur(200px);
-  }
-  
- 
+.hero-bg {
+  background: url("https://raw.githubusercontent.com/khammami/lgd-web/main/public/images/sp-location.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #261a17;
+}
+
+.hero-container {
+  backdrop-filter: blur(200px);
+}
