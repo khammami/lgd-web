@@ -12,7 +12,7 @@
     "title": "Terms of Use ('Terms')",
     "display": "hidden",
     "theme": {
-      "timestamp": false
+      "timestamp": true
     }
   },
   "privacy": {
@@ -20,7 +20,7 @@
     "title": "Privacy Policy",
     "display": "hidden",
     "theme": {
-      "timestamp": false
+      "timestamp": true
     }
   },
   "contact": {
