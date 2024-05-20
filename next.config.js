@@ -12,9 +12,9 @@ const withNextra = require('nextra')({
   },
 })
 
-const isProduction = process.env.NODE_ENV === "production";
-const basePath = isProduction ? "/lgd-web" : "";
-const assetPrefix = isProduction ? basePath+"/" : "";
+// const isProduction = process.env.NODE_ENV === "production";
+// const basePath = isProduction ? "/lgd-web" : "";
+// const assetPrefix = isProduction ? basePath+"/" : "";
 
 const path = require('node:path');
 const sep = path.sep === "/" ? "/" : "\\\\"
@@ -28,8 +28,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  // assetPrefix: assetPrefix,
+  // basePath: basePath,
   output: "export",
   webpack(config) {
     const fileLoaderRule = config.module.rules.find(rule =>
