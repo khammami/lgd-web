@@ -2,7 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import NextLink from "next/link";
-import { LgdBookIcon } from "@components/icons";
+import { LgdBookIcon, GooglePlayIcon } from "@components/icons";
 
 const classes = {
   link: "hover:underline decoration-from-font [text-underline-position:from-font]",
@@ -28,16 +28,7 @@ const config: DocsThemeConfig = {
   },
   chat: {
     link: "https://play.google.com/",
-    icon: (
-      <svg fill="currentColor" height="24" width="24" viewBox="0 0 32 32">
-        <g>
-          <path d="M17,14.5l4.2-4.5L4.9,1.2C4.8,1.1,4.6,1.1,4.3,1L17,14.5z" />
-          <path d="M23,21l5.9-3.2c0.7-0.4,1.1-1,1.1-1.8s-0.4-1.5-1.1-1.8L23,11l-4.7,5L23,21z" />
-          <path d="M2.4,1.9C2.1,2.2,2,2.6,2,3V29c0,0.4,0.1,0.8,0.4,1.2L15.6,16L2.4,1.9z" />
-          <path d="M17,17.5L4.3,31c0.2,0,0.4-0.1,0.6-0.2L21.2,22L17,17.5z" />
-        </g>
-      </svg>
-    ),
+    icon: <GooglePlayIcon />,
   },
   docsRepositoryBase: "https://github.com/khammami/lgd-web",
   footer: {
@@ -45,8 +36,8 @@ const config: DocsThemeConfig = {
       <div className="w-full">
         <div className="flex justify-between items-start mb-24 flex-wrap gap-10">
           <div className="max-lg:w-full">
-            <NextLink href="/" className="inline-block text-center grayscale hover:grayscale-0">
-              <LgdBookIcon className="w-16 h-auto mx-auto my-8" />
+            <NextLink href="/" className="inline-block text-center grayscale hover:grayscale-0 text-xs">
+              <LgdBookIcon className="w-8 h-auto mx-auto my-8" />
               <span>Local Guides Directory</span>
             </NextLink>
           </div>

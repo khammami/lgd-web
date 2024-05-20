@@ -51,7 +51,7 @@
   }
 
   .hero-bg{
-    background: url('/images/sp-location.png');
+    background: url('https://raw.githubusercontent.com/khammami/lgd-web/main/public/images/sp-location.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
