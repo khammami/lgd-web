@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.khammami.lgd",
+      "sha256_cert_fingerprints": [
+        "EF:08:05:E7:6D:15:0D:C6:05:F4:9D:CA:C7:59:B7:DC:B4:A6:03:93:5B:0D:E4:8B:38:B0:13:1E:7A:B6:5D:79",
+        "A4:AC:14:85:62:2C:FC:10:DB:B3:20:1F:F4:1E:11:D1:FA:CC:E5:01:68:ED:70:77:7A:86:16:0F:B4:CC:A9:F3"
+      ]
+    }
+  }
+]
