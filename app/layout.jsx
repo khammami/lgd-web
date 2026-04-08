@@ -83,7 +83,7 @@ export default async function RootLayout({ children }) {
             <h3 className="text-lg font-bold">Download</h3>
             <li>
               <NextLink
-                href="https://play.google.com"
+                href="https://play.google.com/"
                 target="_blank"
                 className="hover:underline decoration-from-font [text-underline-position:from-font]"
               >
