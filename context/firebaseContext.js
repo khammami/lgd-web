@@ -1,33 +1,34 @@
-import { useEffect, createContext, useContext } from "react";
-import { useRouter } from "next/router";
+"use client";
+
+import { useEffect, useRef, createContext, useContext } from "react";
+import { usePathname } from "next/navigation";
 import { logEvent, getAnalytics } from "firebase/analytics";
 import { createFirebaseApp } from "@components/firebase/clientApp";
 
 export const FirebaseContext = createContext();
 
 export default function FirebaseTrackingProvider({ children }) {
-  const router = useRouter();
-  useEffect(() => {
-    const app = createFirebaseApp();
-    const analytics = getAnalytics(app);
+  const pathname = usePathname();
+  const prevPathname = useRef(pathname);
 
-    const handleRouteChange = (url) => {
-      if (!analytics) {
-        return;
-      }
+  useEffect(() => {
+    if (prevPathname.current === pathname) return;
+    prevPathname.current = pathname;
+
+    try {
+      const app = createFirebaseApp();
+      if (!app) return;
+      const analytics = getAnalytics(app);
+      if (!analytics) return;
 
       logEvent(analytics, "page_view", {
-        page_location: url,
+        page_location: pathname,
         page_title: document?.title,
       });
-    };
-
-    router.events.on("routeChangeStart", handleRouteChange);
-
-    return () => {
-      router.events.off("routeChangeStart", handleRouteChange);
-    };
-  }, []);
+    } catch (e) {
+      // Firebase analytics may not be available
+    }
+  }, [pathname]);
 
   return (
     <FirebaseContext.Provider value={{}}>{children}</FirebaseContext.Provider>
