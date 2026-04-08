@@ -1,10 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* .nextra-search{
-    display: none !important;
-} */
+@source "../components";
+@source "../app";
+
+@theme {
+  --color-primary: #ef7a37;
+  --color-conf-black: #0e031c;
+  --color-black: #1b1b1b;
+
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - .5rem));
+    }
+  }
+}
+
+:root {
+  --nextra-primary-hue: 22deg;
+  --nextra-primary-saturation: 80%;
+}
+
+.dark {
+  --nextra-primary-hue: 22deg;
+  --nextra-primary-saturation: 50%;
+}
 
 .index {
   p {
@@ -35,15 +56,15 @@
       rgba(124, 124, 124, 0) 74.17%
     ),
     linear-gradient(0deg, #f8f8f8, #f8f8f8);
+}
 
-  .dark & {
-    background: linear-gradient(0deg, #111, #111),
-      linear-gradient(
-        303.75deg,
-        rgba(124, 124, 124, 0.2) 0.8%,
-        rgba(124, 124, 124, 0) 74.17%
-      );
-  }
+.dark .index-bg {
+  background: linear-gradient(0deg, #111, #111),
+    linear-gradient(
+      303.75deg,
+      rgba(124, 124, 124, 0.2) 0.8%,
+      rgba(124, 124, 124, 0) 74.17%
+    );
 }
 
 .index-gradient {
