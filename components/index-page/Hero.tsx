@@ -4,7 +4,7 @@ import { GooglePlayIcon, LgdHeroIcon } from "@components/icons";
 
 export function Hero() {
   return (
-    <div className="hero-bg xl">
+    <div className="hero-bg">
       <div className="hero-container index-gradient xl:py-20">
         <div className="container text-white conf-block">
           <section

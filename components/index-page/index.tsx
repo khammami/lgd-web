@@ -4,7 +4,7 @@ export function IndexPage() {
   return (
     <div className="index">
       <Hero />
-      <section className="text-center gap-14 justify-around container flex flex-col conf-block lg:flex-row-reverse lg:items-start lg:*:w-1/2">
+      <section className="text-center gap-14 justify-around container flex flex-col conf-block items-center">
         <div className="max-lg:text-center">
           <h2>Local Guides Directory</h2>
           <p>

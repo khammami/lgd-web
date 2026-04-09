@@ -19,17 +19,19 @@
 
 :root {
   --nextra-primary-hue: 22deg;
-  --nextra-primary-saturation: 80%;
+  --nextra-primary-saturation: 86%;
+  --nextra-primary-lightness: 58%;
 }
 
 .dark {
   --nextra-primary-hue: 22deg;
   --nextra-primary-saturation: 50%;
+  --nextra-primary-lightness: 58%;
 }
 
 .index {
   p {
-    @apply text-lg lg:text-xl/9 mb-5 max-w-2xl;
+    @apply text-lg lg:text-xl/9 mb-5 max-w-2xl mx-auto;
   }
 
   h2 {
@@ -38,6 +40,10 @@
 
   pre {
     @apply bg-white;
+  }
+
+  section {
+    @apply text-black dark:text-white;
   }
 }
 
@@ -72,7 +78,7 @@
 }
 
 .hero-bg {
-  background: url("https://raw.githubusercontent.com/khammami/lgd-web/main/public/images/sp-location.png");
+  background: url("/images/sp-location.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
