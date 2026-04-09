@@ -8,6 +8,12 @@ import { LgdBookIcon, GooglePlayIcon } from '@components/icons'
 import NextLink from 'next/link'
 import FirebaseProvider from '../context/firebaseContext'
 
+const themeColor = {
+  hue: { light: 22, dark: 22 },
+  saturation: { light: 86, dark: 50 },
+  lightness: { light: 58, dark: 58 }
+}
+
 export const metadata = {
   title: {
     default: 'Local Guides Directory',
@@ -127,7 +133,7 @@ export default async function RootLayout({ children }) {
 
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
-      <Head />
+      <Head color={themeColor} />
       <body>
         <Layout
           banner={
