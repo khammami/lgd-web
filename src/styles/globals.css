@@ -1,6 +1,17 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+.theme-btn-active {
+  background-color: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+/* Banner dismissed — collapse the announcement bar and reset layout */
+html.banner-dismissed #announcement { display: none; }
+html.banner-dismissed header { top: 0; }
+html.banner-dismissed body { padding-top: calc(var(--spacing) * 16); }
+
 @source "../components";
 @source "../pages";
 @source "../layouts";
@@ -30,10 +41,6 @@
 
   pre {
     @apply bg-white;
-  }
-
-  section {
-    @apply text-black dark:text-white;
   }
 }
 
@@ -69,7 +76,7 @@
 
 .hero-bg {
   background: url("/images/sp-location.webp");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #261a17;

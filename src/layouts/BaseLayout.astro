@@ -1,13 +1,29 @@
 ---
+import { execSync } from 'node:child_process';
 import FirebaseAnalytics from '../components/FirebaseAnalytics';
+import Announcement from '../components/Announcement.astro';
 import '../styles/globals.css';
+import { announcement } from '../config/announcement';
 
-const { title = 'Local Guides Directory' } = Astro.props;
+const { title = 'Local Guides Directory', file } = Astro.props;
 const pathname = Astro.url.pathname;
 const isDocPage = pathname === '/privacy/' || pathname === '/terms/' || pathname === '/privacy' || pathname === '/terms';
+const hasBanner = announcement.enabled;
+
+let lastModified: string | null = null;
+if (isDocPage && file) {
+  try {
+    const iso = execSync(`git log -1 --format=%cI -- "${file}"`).toString().trim();
+    if (iso) {
+      lastModified = new Date(iso).toLocaleDateString('en-US', {
+        year: 'numeric', month: 'long', day: 'numeric',
+      });
+    }
+  } catch { /* git not available or file not yet committed */ }
+}
 ---
 
-<html lang="en" class="bg-white text-black dark:bg-black dark:text-white">
+<html lang="en" class="bg-white text-black dark:bg-black dark:text-white" data-announcement-id={hasBanner ? announcement.id : undefined}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -16,22 +32,22 @@ const isDocPage = pathname === '/privacy/' || pathname === '/terms/' || pathname
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <script is:inline>
       (() => {
-        const storedTheme = localStorage.getItem('theme');
+        const html = document.documentElement;
+        const stored = localStorage.getItem('theme');
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
+        const isDark = stored === 'dark' || (stored !== 'light' && prefersDark);
+        html.classList.toggle('dark', isDark);
+        const announcementId = html.dataset.announcementId;
+        if (announcementId && localStorage.getItem('announcement-dismissed') === announcementId) {
+          html.classList.add('banner-dismissed');
         }
       })();
     </script>
   </head>
-  <body class="min-h-screen flex flex-col pt-26">
-    <div class="fixed inset-x-0 top-0 z-50 bg-primary text-white text-center py-2 px-4 text-sm font-medium">
-      ⚠️ DISCLAIMER ⚠️ LGD <b>IS NOT</b> sponsored by Google or Local Guides team.
-    </div>
+  <body class={`min-h-screen flex flex-col ${hasBanner ? 'pt-26' : 'pt-16'}`}>
+    <Announcement />
 
-    <header class="fixed inset-x-0 top-10 z-40 border-b border-black/10 dark:border-white/10 bg-white/95 dark:bg-black/95 backdrop-blur">
+    <header class={`fixed inset-x-0 z-40 border-b border-black/10 dark:border-white/10 bg-white/95 dark:bg-black/95 backdrop-blur ${hasBanner ? 'top-10' : 'top-0'}`}>
       <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between gap-4">
         <a href="/" class="inline-flex items-center gap-3 font-semibold">
           <img src="/icons/lgd-book-logo.svg" alt="Local Guides Directory" class="w-6 h-auto" />
@@ -43,9 +59,19 @@ const isDocPage = pathname === '/privacy/' || pathname === '/terms/' || pathname
             <svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5"><path d="M12 1.5a10.5 10.5 0 0 0-3.32 20.46c.52.1.71-.22.71-.5v-1.76c-2.9.63-3.5-1.23-3.5-1.23-.48-1.2-1.16-1.52-1.16-1.52-.95-.65.07-.64.07-.64 1.04.08 1.6 1.08 1.6 1.08.94 1.6 2.45 1.14 3.04.88.1-.68.37-1.14.67-1.4-2.31-.26-4.75-1.16-4.75-5.19 0-1.15.4-2.08 1.08-2.82-.11-.26-.47-1.31.1-2.74 0 0 .88-.28 2.88 1.08a9.87 9.87 0 0 1 5.24 0c2-1.36 2.88-1.08 2.88-1.08.57 1.43.21 2.48.1 2.74.67.74 1.08 1.67 1.08 2.82 0 4.04-2.45 4.92-4.78 5.18.38.32.72.95.72 1.93v2.86c0 .28.19.61.72.5A10.5 10.5 0 0 0 12 1.5" /></svg>
           </a>
           <a href="https://play.google.com/" target="_blank" rel="noreferrer" aria-label="Google Play" class="hover:text-primary">
-            <img src="/icons/google-play-store.svg" alt="Google Play" class="h-5 w-5" />
+            <img src="/icons/google-play-store.svg" alt="Google Play" class="h-5 w-5 dark:invert" />
           </a>
-          <button id="theme-toggle" class="rounded border border-black/20 dark:border-white/20 px-2 py-1 text-xs hover:border-primary">🌓</button>
+          <div id="theme-toggle" class="flex items-center rounded border border-black/20 dark:border-white/20 overflow-hidden" role="group" aria-label="Color theme">
+            <button data-theme="light" class="theme-btn px-2 py-1.5 hover:text-primary transition-colors" title="Light">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </button>
+            <button data-theme="system" class="theme-btn px-2 py-1.5 hover:text-primary transition-colors border-x border-black/20 dark:border-white/20" title="System">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </button>
+            <button data-theme="dark" class="theme-btn px-2 py-1.5 hover:text-primary transition-colors" title="Dark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+          </div>
         </div>
       </nav>
     </header>
@@ -53,6 +79,11 @@ const isDocPage = pathname === '/privacy/' || pathname === '/terms/' || pathname
     <main class="flex-1 index-bg">
       <div class={isDocPage ? 'max-w-4xl mx-auto px-4 py-12 prose prose-neutral dark:prose-invert' : ''}>
         <slot />
+        {lastModified && (
+          <p class="not-prose text-sm text-black/50 dark:text-white/50 mt-8 pt-8 border-t border-black/10 dark:border-white/10">
+            Last updated on {lastModified}
+          </p>
+        )}
       </div>
     </main>
 
@@ -112,22 +143,52 @@ const isDocPage = pathname === '/privacy/' || pathname === '/terms/' || pathname
     <FirebaseAnalytics client:only="react" />
 
     <script is:inline>
-      const setTheme = (theme) => {
-        document.documentElement.classList.toggle('dark', theme === 'dark');
-        localStorage.setItem('theme', theme);
+      const applyTheme = (preference) => {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const isDark = preference === 'dark' || (preference === 'system' && prefersDark);
+        document.documentElement.classList.toggle('dark', isDark);
+      };
+
+      const updateToggleUI = (preference) => {
+        document.querySelectorAll('.theme-btn').forEach(btn => {
+          btn.classList.toggle('theme-btn-active', btn.dataset.theme === preference);
+        });
+      };
+
+      const setTheme = (preference) => {
+        localStorage.setItem('theme', preference);
+        applyTheme(preference);
+        updateToggleUI(preference);
       };
 
       const initThemeToggle = () => {
-        const button = document.getElementById('theme-toggle');
-        if (!button) return;
-        button.onclick = () => {
-          const isDark = document.documentElement.classList.contains('dark');
-          setTheme(isDark ? 'light' : 'dark');
-        };
+        const preference = localStorage.getItem('theme') || 'system';
+        applyTheme(preference);
+        updateToggleUI(preference);
+        document.querySelectorAll('.theme-btn').forEach(btn => {
+          btn.onclick = () => setTheme(btn.dataset.theme);
+        });
       };
+
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+        if ((localStorage.getItem('theme') || 'system') === 'system') applyTheme('system');
+      });
 
       initThemeToggle();
       document.addEventListener('astro:page-load', initThemeToggle);
+
+      const initAnnouncement = () => {
+        const closeBtn = document.getElementById('close-announcement');
+        if (!closeBtn) return;
+        closeBtn.onclick = () => {
+          const id = document.getElementById('announcement')?.dataset.announcementId;
+          if (id) localStorage.setItem('announcement-dismissed', id);
+          document.documentElement.classList.add('banner-dismissed');
+        };
+      };
+
+      initAnnouncement();
+      document.addEventListener('astro:page-load', initAnnouncement);
     </script>
   </body>
 </html>
