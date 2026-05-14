@@ -1,3 +1,8 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: "Privacy Policy"
+---
+
 # Privacy Policy
 
 **Effective Date:** November 21, 2024

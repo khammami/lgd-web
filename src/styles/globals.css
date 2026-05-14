@@ -1,7 +1,9 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 @source "../components";
-@source "../app";
+@source "../pages";
+@source "../layouts";
 
 @theme {
   --color-primary: #ef7a37;
@@ -15,18 +17,6 @@
       transform: translate(calc(-50% - .5rem));
     }
   }
-}
-
-:root {
-  --nextra-primary-hue: 22deg;
-  --nextra-primary-saturation: 86%;
-  --nextra-primary-lightness: 58%;
-}
-
-.dark {
-  --nextra-primary-hue: 22deg;
-  --nextra-primary-saturation: 50%;
-  --nextra-primary-lightness: 58%;
 }
 
 .index {
