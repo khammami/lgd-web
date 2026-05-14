@@ -6,11 +6,10 @@ Website for the Local Guides Directory app — a directory for Google Local Guid
 
 ## Tech Stack
 
-- [Next.js](https://nextjs.org/) 15 (static export)
-- [Nextra](https://nextra.site/) 4 (docs theme)
+- [Astro](https://astro.build/) 5 (static output)
 - [Tailwind CSS](https://tailwindcss.com/) 4
 - [Firebase](https://firebase.google.com/)
-- React 19
+- React 19 (client island for analytics)
 
 ## Getting Started
 
@@ -23,7 +22,7 @@ pnpm dev
 
 ```bash
 pnpm build
-pnpm start  # serves the static output
+pnpm preview
 ```
 
 ## License

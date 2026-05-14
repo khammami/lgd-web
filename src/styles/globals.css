@@ -1,7 +1,20 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.theme-btn-active {
+  background-color: color-mix(in srgb, currentColor 10%, transparent);
+}
+
+/* Banner dismissed — collapse the announcement bar and reset layout */
+html.banner-dismissed #announcement { display: none; }
+html.banner-dismissed header { top: 0; }
+html.banner-dismissed body { padding-top: calc(var(--spacing) * 16); }
 
 @source "../components";
-@source "../app";
+@source "../pages";
+@source "../layouts";
 
 @theme {
   --color-primary: #ef7a37;
@@ -17,18 +30,6 @@
   }
 }
 
-:root {
-  --nextra-primary-hue: 22deg;
-  --nextra-primary-saturation: 86%;
-  --nextra-primary-lightness: 58%;
-}
-
-.dark {
-  --nextra-primary-hue: 22deg;
-  --nextra-primary-saturation: 50%;
-  --nextra-primary-lightness: 58%;
-}
-
 .index {
   p {
     @apply text-lg lg:text-xl/9 mb-5 max-w-2xl mx-auto;
@@ -40,10 +41,6 @@
 
   pre {
     @apply bg-white;
-  }
-
-  section {
-    @apply text-black dark:text-white;
   }
 }
 
@@ -79,7 +76,7 @@
 
 .hero-bg {
   background: url("/images/sp-location.webp");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #261a17;

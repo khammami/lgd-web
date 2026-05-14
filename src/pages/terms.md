@@ -1,3 +1,8 @@
+---
+layout: ../layouts/BaseLayout.astro
+title: "Terms of Use"
+---
+
 # **Terms of Use ("Terms")**
 
 Last updated: May 22, 2017
