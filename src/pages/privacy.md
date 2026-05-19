@@ -5,7 +5,8 @@ title: "Privacy Policy"
 
 # Privacy Policy
 
-**Effective Date:** November 21, 2024
+**Effective Date:** November 21, 2024\
+**Last Reviewed:** May 19, 2026
 
 Khalil Hammami ("us", "we", or "our") operates the Local Guides Directory (LGD) app and website (the "Service").
 
@@ -64,8 +65,7 @@ We utilize several third-party services that may collect information used to ide
 
 We use AdMob, a third-party advertising platform by Google, to display ads in our app. AdMob may personalize these ads based on your interests and activity in our app and other websites and apps.
 
-
-* You can opt out of interest-based advertising by visiting your device settings and adjusting ad preferences. You can also visit[ https://support.google.com/adsense/answer/142293?hl=en](https://support.google.com/adsense/answer/142293?hl=en) or[ https://youradchoices.com/control](https://youradchoices.com/control) for more information.
+* You can opt out of interest-based advertising by visiting your device settings and adjusting ad preferences. You can also visit[https://support.google.com/adsense/answer/142293?hl=en](https://support.google.com/adsense/answer/142293?hl=en) or[https://youradchoices.com/control](https://youradchoices.com/control) for more information.
 
 ## **Log Data**
 
@@ -109,20 +109,20 @@ You have certain rights regarding your personal information, which may vary depe
 
 ### **General Rights**
 
-*   **Right to Know:** You have the right to be informed about how your data is collected, used, and shared. This policy aims to provide this information. For further clarification, please contact us.
+* **Right to Know:** You have the right to be informed about how your data is collected, used, and shared. This policy aims to provide this information. For further clarification, please contact us.
 
 ### **Rights for Residents of the European Economic Area (EEA) under GDPR**
 
 If you are a resident of the European Economic Area (EEA), you have the following data protection rights under the General Data Protection Regulation (GDPR):
 
-*   **Right of Access:** You have the right to request copies of your personal data.
-*   **Right to Rectification:** You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.
-*   **Right to Erasure (Right to be Forgotten):** You have the right to request that we erase your personal data, under certain conditions.
-*   **Right to Restrict Processing:** You have the right to request that we restrict the processing of your personal data, under certain conditions.
-*   **Right to Object to Processing:** You have the right to object to our processing of your personal data, under certain conditions, particularly for direct marketing purposes or processing based on legitimate interests.
-*   **Right to Data Portability:** You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
-*   **Right to Withdraw Consent:** If we are processing your personal data based on your consent, you have the right to withdraw that consent at any time.
-*   **Right to Lodge a Complaint:** You have the right to lodge a complaint with a supervisory authority, particularly in the Member State of your habitual residence, place of work, or place of the alleged infringement if you consider that the processing of your personal data infringes the GDPR.
+* **Right of Access:** You have the right to request copies of your personal data.
+* **Right to Rectification:** You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.
+* **Right to Erasure (Right to be Forgotten):** You have the right to request that we erase your personal data, under certain conditions.
+* **Right to Restrict Processing:** You have the right to request that we restrict the processing of your personal data, under certain conditions.
+* **Right to Object to Processing:** You have the right to object to our processing of your personal data, under certain conditions, particularly for direct marketing purposes or processing based on legitimate interests.
+* **Right to Data Portability:** You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.
+* **Right to Withdraw Consent:** If we are processing your personal data based on your consent, you have the right to withdraw that consent at any time.
+* **Right to Lodge a Complaint:** You have the right to lodge a complaint with a supervisory authority, particularly in the Member State of your habitual residence, place of work, or place of the alleged infringement if you consider that the processing of your personal data infringes the GDPR.
 
 To exercise any of these GDPR rights (excluding lodging a complaint, which is done directly with the supervisory authority), please contact us using the contact information provided in the "Data Controller" section.
 
@@ -130,31 +130,48 @@ To exercise any of these GDPR rights (excluding lodging a complaint, which is do
 
 If you are a Virginia resident, you have specific rights regarding your personal data under the Virginia Consumer Data Protection Act (VCDPA). These rights include:
 
-*   **Right to Access:** You have the right to confirm whether we are processing your personal data and to access such personal data.
-*   **Right to Correct:** You have the right to request that we correct inaccuracies in your personal data.
-*   **Right to Delete:** You have the right to request that we delete personal data provided by or obtained about you.
-*   **Right to Data Portability:** You have the right to obtain a copy of your personal data that you previously provided to us in a portable and, to the extent technically feasible, readily usable format.
-*   **Right to Opt-Out of Sale:** While we do not "sell" personal data in the traditional sense, the VCDPA's definition of "sale" can be broad. You have the right to opt-out of the "sale" of your personal data. Please see the "Opting Out of Data Sale and Targeted Advertising" section for more details on how this applies to targeted advertising.
-*   **Right to Opt-Out of Targeted Advertising:** You have the right to opt-out of the processing of your personal data for purposes of targeted advertising. See the "Opting Out of Data Sale and Targeted Advertising" section for instructions.
-*   **Right to Opt-Out of Profiling:** You have the right to opt-out of the processing of personal data for decisions that produce legal or similarly significant effects concerning you. We do not currently engage in such profiling.
+* **Right to Access:** You have the right to confirm whether we are processing your personal data and to access such personal data.
+* **Right to Correct:** You have the right to request that we correct inaccuracies in your personal data.
+* **Right to Delete:** You have the right to request that we delete personal data provided by or obtained about you.
+* **Right to Data Portability:** You have the right to obtain a copy of your personal data that you previously provided to us in a portable and, to the extent technically feasible, readily usable format.
+* **Right to Opt-Out of Sale:** While we do not "sell" personal data in the traditional sense, the VCDPA's definition of "sale" can be broad. You have the right to opt-out of the "sale" of your personal data. Please see the "Opting Out of Data Sale and Targeted Advertising" section for more details on how this applies to targeted advertising.
+* **Right to Opt-Out of Targeted Advertising:** You have the right to opt-out of the processing of your personal data for purposes of targeted advertising. See the "Opting Out of Data Sale and Targeted Advertising" section for instructions.
+* **Right to Opt-Out of Profiling:** You have the right to opt-out of the processing of personal data for decisions that produce legal or similarly significant effects concerning you. We do not currently engage in such profiling.
 
 To exercise any of these rights, please contact us using the contact information provided in the "Data Controller" section. You may also be able to designate an authorized agent to make a request on your behalf. We will respond to your request consistent with applicable law. If we deny your request, you have the right to appeal our decision by contacting us.
+
+## **Your California Privacy Rights (CCPA)**
+
+If you are a California resident, the California Consumer Privacy Act (CCPA) grants you specific rights regarding your personal information.
+
+### **Do We Sell Your Personal Information?**
+
+We do not sell your personal information for monetary consideration. However, the CCPA defines "sale" and "sharing" broadly. Our use of AdMob, a third-party advertising platform by Google, to serve targeted or interest-based advertisements may be considered "sharing" of personal information under the CCPA. We want to be transparent about this practice so you can make an informed choice.
+
+### **Your CCPA Rights**
+
+* **Right to Know:** You have the right to request that we disclose the categories and specific pieces of personal information we have collected about you, the categories of sources from which it was collected, the business or commercial purpose for collecting or sharing it, and the categories of third parties with whom we share it.
+* **Right to Delete:** You have the right to request that we delete personal information we have collected from you, subject to certain exceptions.
+* **Right to Opt-Out of Sale or Sharing:** You have the right to opt out of the sale or sharing of your personal information. See the "Do Not Sell or Share My Personal Information" section below for instructions.
+* **Right to Non-Discrimination:** We will not discriminate against you for exercising any of your CCPA rights.
+
+To exercise your Right to Know or Right to Delete, please contact us using the contact information in the "Data Controller" section.
 
 ### **Rights for Residents of Brazil under LGPD**
 
 If you are a resident of Brazil, you have specific rights regarding your personal data under the Lei Geral de Proteção de Dados (LGPD). These rights include:
 
-*   **Confirmation of Processing:** The right to obtain confirmation of the existence of processing of your personal data.
-*   **Access to Data:** The right to access your personal data.
-*   **Correction of Incomplete, Inaccurate, or Outdated Data:** The right to request the correction of your personal data that is incomplete, inaccurate, or out-of-date.
-*   **Anonymization, Blocking, or Deletion:** The right to request the anonymization, blocking, or deletion of unnecessary or excessive personal data, or data processed in non-compliance with the LGPD.
-*   **Data Portability:** The right to request the portability of your personal data to another service or product provider, upon express request, subject to commercial and industrial secrets.
-*   **Deletion of Data Processed with Consent:** The right to request the deletion of personal data processed with your consent, except in cases where retention is permitted by law.
-*   **Information about Sharing:** The right to obtain information about public and private entities with which we have shared your personal data.
-*   **Information about Consent:** The right to information about the possibility of denying consent and the consequences of such denial.
-*   **Revocation of Consent:** The right to revoke your consent at any time.
-*   **Review of Automated Decisions:** The right to request the review of decisions made solely based on automated processing of personal data affecting your interests.
-*   **Lodging a Complaint:** The right to lodge a complaint with the National Data Protection Authority (ANPD) in Brazil.
+* **Confirmation of Processing:** The right to obtain confirmation of the existence of processing of your personal data.
+* **Access to Data:** The right to access your personal data.
+* **Correction of Incomplete, Inaccurate, or Outdated Data:** The right to request the correction of your personal data that is incomplete, inaccurate, or out-of-date.
+* **Anonymization, Blocking, or Deletion:** The right to request the anonymization, blocking, or deletion of unnecessary or excessive personal data, or data processed in non-compliance with the LGPD.
+* **Data Portability:** The right to request the portability of your personal data to another service or product provider, upon express request, subject to commercial and industrial secrets.
+* **Deletion of Data Processed with Consent:** The right to request the deletion of personal data processed with your consent, except in cases where retention is permitted by law.
+* **Information about Sharing:** The right to obtain information about public and private entities with which we have shared your personal data.
+* **Information about Consent:** The right to information about the possibility of denying consent and the consequences of such denial.
+* **Revocation of Consent:** The right to revoke your consent at any time.
+* **Review of Automated Decisions:** The right to request the review of decisions made solely based on automated processing of personal data affecting your interests.
+* **Lodging a Complaint:** The right to lodge a complaint with the National Data Protection Authority (ANPD) in Brazil.
 
 To exercise any of these LGPD rights, please contact us using the contact information provided in the "Data Controller" section.
 
@@ -179,9 +196,9 @@ I may update our Privacy Policy from time to time. Thus, you are advised to revi
 
 ## **Opting Out of Data Sale and Targeted Advertising**
 
-### **Sale of Personal Information**
+### **Do Not Sell or Share My Personal Information (CCPA Opt-Out)**
 
-We appreciate your privacy and do not sell your personal information in the traditional sense (i.e., for monetary gain). However, some privacy laws like the California Consumer Privacy Act (CCPA) have a broad definition of "sale" that may include sharing of personal information for targeted advertising.
+California residents have the right to opt out of the sale or sharing of their personal information. We do not sell your personal information for monetary consideration. However, our use of AdMob for interest-based or targeted advertising may constitute "sharing" of personal data under the CCPA's broad definition of "sale." If you wish to opt out, please use the methods described below.
 
 **Targeted Advertising:**
 
@@ -189,13 +206,13 @@ We use AdMob, a third-party advertising platform by Google, to display ads in ou
 
 You can opt out of interest-based advertising through several methods:
 
-*   **Device Settings:** Adjust your mobile device's ad preferences.
-  *   For Android: Open "Settings" > "Google" > "Ads" and enable "Opt out of Ads Personalization."
-  *   For iOS: Open "Settings" > "Privacy" > "Advertising" and enable "Limit Ad Tracking." (Note: Paths may vary slightly by OS version and device.)
-*   **Industry Opt-Out Tools:** You can also visit industry opt-out pages like:
-    *   [Digital Advertising Alliance (DAA) Opt-Out Tool](https://youradchoices.com/control)
-    *   [Network Advertising Initiative (NAI) Opt-Out Tool](https://optout.networkadvertising.org/?c=1)
-    *   Google provides information on controlling your ad experience here: [https://support.google.com/adsense/answer/142293?hl=en](https://support.google.com/adsense/answer/142293?hl=en)
+* **Device Settings:** Adjust your mobile device's ad preferences.
+* For Android: Open "Settings" > "Google" > "Ads" and enable "Opt out of Ads Personalization."
+* For iOS: Open "Settings" > "Privacy" > "Advertising" and enable "Limit Ad Tracking." (Note: Paths may vary slightly by OS version and device.)
+* **Industry Opt-Out Tools:** You can also visit industry opt-out pages like:
+  * [Digital Advertising Alliance (DAA) Opt-Out Tool](https://youradchoices.com/control)
+  * [Network Advertising Initiative (NAI) Opt-Out Tool](https://optout.networkadvertising.org/?c=1)
+  * Google provides information on controlling your ad experience here: [https://support.google.com/adsense/answer/142293?hl=en](https://support.google.com/adsense/answer/142293?hl=en)
 
 Please note that opting out of targeted advertising does not mean you will no longer see ads; it means the ads you see may be less relevant to your interests.
 
