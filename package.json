@@ -9,9 +9,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^6.0.2",
+    "@astrojs/mdx": "^6.0.3",
     "@astrojs/react": "^5.0.7",
-    "astro": "^6.4.4",
+    "astro": "^6.4.7",
     "clsx": "^2.1.1",
     "firebase": "^12.14.0",
     "react": "^19.2.7",
